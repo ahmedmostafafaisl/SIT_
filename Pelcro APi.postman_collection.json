@@ -1,0 +1,626 @@
+{
+	"info": {
+		"_postman_id": "a38d5c37-1401-41ed-86bc-82c3130abf0b",
+		"name": "Pelcro APi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "getAllCustomers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer/1?Accept=application/json&Authorization=Brear \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODU1NjM1Ny0wYmUxLTRlMzgtYmEwYS02YmZjYWRlNWJmNGMiLCJqdGkiOiJiYTc2YWI5MjM2MTEzYjZhNDUxYjc2YjQ3ZGE0ZjIxNTZhOGNmMDkzYzg1ZjBkZTQ5MDBjN2ZiNTNmNDkwYjliZDZhZmVkOTQwMjkwOTU3ZSIsImlhdCI6MTY3NDkzNjMxOC43MjcwMzMsIm5iZiI6MTY3NDkzNjMxOC43MjcwMzYsImV4cCI6MTcwNjQ3MjMxOC43MDg2MjksInN1YiI6IjEiLCJzY29wZXMiOltdfQ.O4BnOMZg6HLrrYyjo1h_GF8FqqRPXN2CNc58VzPQL2g3Hiu7tH8PEBczBMOLSNAzH_Ie9tK_uH_vkq7QoG1J29YyudWSAg71EA8W4jPCpDRuk-CDOCRhLETjdD1sQM6Ycra7gpsnQ9uayzQxKdL9yCsPXLO2vABG9v5IIZxEbMeciPCqBsxQ6IgYLo7tknVdmJ9nRfdAtBxososzVoXVz-OY3u99uXd66vomr6y649jD64YwrLFnKsQKn_qmzaUbBjlw2p2_NSoldkMXfikgquHcfvjujUARHMdN-OoByc1jkW-oJvrJDfg22RI-oMk2moyGcwVhGDu9AsUmBQ7Zf5jNv7I9BarAJUAwYmrhsor9l0yVsRTR2mhqrTw6caiGcb3gJTFNGppt04Aq7ztxP1pWButlLRIoNLptRJIBcqEc6Z1LrA0jpEvjYen2fKtXpmi1paJefRoixzeu2oKrtxoTQPp7b9uOq59CwYHiZqV4YzqcZpn496w4RhvHtZBc29EutKHSG79P-fG7dGNvHYQwmrKmZyKowU6-EI92j95RwXf61rIbdPZhu9SeTjYdzUiujg2u3eCHNChxmBL_ALuFQs3sXyXUPxYkL5Fex2Z4uvinxgxDXgnnAo28ABQarzvIrf3BlDmQLv6xA3UFww0XOCLRr6jpuZizTslh1P0\"",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"1"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "application/json"
+								},
+								{
+									"key": "Authorization",
+									"value": "Brear \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODU1NjM1Ny0wYmUxLTRlMzgtYmEwYS02YmZjYWRlNWJmNGMiLCJqdGkiOiJiYTc2YWI5MjM2MTEzYjZhNDUxYjc2YjQ3ZGE0ZjIxNTZhOGNmMDkzYzg1ZjBkZTQ5MDBjN2ZiNTNmNDkwYjliZDZhZmVkOTQwMjkwOTU3ZSIsImlhdCI6MTY3NDkzNjMxOC43MjcwMzMsIm5iZiI6MTY3NDkzNjMxOC43MjcwMzYsImV4cCI6MTcwNjQ3MjMxOC43MDg2MjksInN1YiI6IjEiLCJzY29wZXMiOltdfQ.O4BnOMZg6HLrrYyjo1h_GF8FqqRPXN2CNc58VzPQL2g3Hiu7tH8PEBczBMOLSNAzH_Ie9tK_uH_vkq7QoG1J29YyudWSAg71EA8W4jPCpDRuk-CDOCRhLETjdD1sQM6Ycra7gpsnQ9uayzQxKdL9yCsPXLO2vABG9v5IIZxEbMeciPCqBsxQ6IgYLo7tknVdmJ9nRfdAtBxososzVoXVz-OY3u99uXd66vomr6y649jD64YwrLFnKsQKn_qmzaUbBjlw2p2_NSoldkMXfikgquHcfvjujUARHMdN-OoByc1jkW-oJvrJDfg22RI-oMk2moyGcwVhGDu9AsUmBQ7Zf5jNv7I9BarAJUAwYmrhsor9l0yVsRTR2mhqrTw6caiGcb3gJTFNGppt04Aq7ztxP1pWButlLRIoNLptRJIBcqEc6Z1LrA0jpEvjYen2fKtXpmi1paJefRoixzeu2oKrtxoTQPp7b9uOq59CwYHiZqV4YzqcZpn496w4RhvHtZBc29EutKHSG79P-fG7dGNvHYQwmrKmZyKowU6-EI92j95RwXf61rIbdPZhu9SeTjYdzUiujg2u3eCHNChxmBL_ALuFQs3sXyXUPxYkL5Fex2Z4uvinxgxDXgnnAo28ABQarzvIrf3BlDmQLv6xA3UFww0XOCLRr6jpuZizTslh1P0\""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer/1?Accept=application/json&Authorization =Bearer {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODU1NjM1Ny0wYmUxLTRlMzgtYmEwYS02YmZjYWRlNWJmNGMiLCJqdGkiOiI2YWJiYmVhYzc2MGJiYWQ4ODEyZTMyNzAwMDk2MTFmMjM3NGYwNWI3ZWM2MDY2MzhmY2FlMDc1NjhjZGJjY2MzNzI2YzQzYTBhNjMyNzFiYyIsImlhdCI6MTY3NDkyOTU1Ny44NDU1NzgsIm5iZiI6MTY3NDkyOTU1Ny44NDU1ODEsImV4cCI6MTcwNjQ2NTU1Ny44MzQ1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.movWb_hOeg6ZrQpm4HkR2Sii4v20J9KtLlgtSBbTH3Zeb7RdLPVf1p7pe5CWDD-K2D3Z9QcdtoSFpa5x4XIFGa8iEvwuCtIrhss-XMTppy33H5jBJ7qn_wRK2S6t-qCWG6KT2bPbZ34F94HV3IzPPfYvckc-K65WKTgcrsb6dhBnR8DG5YFjNzQL0BdncDx9RzMeLwmomvcvqSgZHKfvK3LMk1z95i2cY5vX9gUi-NlRA5FUn7HdSRITt34hXTXsSud90t2Ih_N8jWFYcRtHl2lJbn0KHyivwNwo--MMg4160zumFi7BIAFIFTiExoNjKDTmeU5FYWQZ97964X3O0LGaojhj4E_SqPbbQA1fmvahxybVcQX029C0SEkT2No25iIyyCEeEMx5cAb1-qz6-qmWjNahUflInmina6bGkte9k1ZZ4sYXWHVGg36HnLrDtoziCEVGMaxRUS7Fe6yNt-kJm9KKEIuMMrVLWEo4ORZlHEc5YDM307cpHTd64y8bwUAtzZC1zDqUxcNuGd7PASiPqMv9FYyzi98e9dZ906xBt1Mmt9MVyX8JCF_oPnLY5WXLFX2ME-zn3jRbQaiPoNd5i_mDJA3RpWFNpVg2aK4BIbqlJL9nYTMohwLL_XdvGOi3hp1txo55-D4fdAyTq_SVWPBT2t-bOCzR6Xg1jtw\"}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"1"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "application/json"
+								},
+								{
+									"key": "Authorization ",
+									"value": "Bearer {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODU1NjM1Ny0wYmUxLTRlMzgtYmEwYS02YmZjYWRlNWJmNGMiLCJqdGkiOiI2YWJiYmVhYzc2MGJiYWQ4ODEyZTMyNzAwMDk2MTFmMjM3NGYwNWI3ZWM2MDY2MzhmY2FlMDc1NjhjZGJjY2MzNzI2YzQzYTBhNjMyNzFiYyIsImlhdCI6MTY3NDkyOTU1Ny44NDU1NzgsIm5iZiI6MTY3NDkyOTU1Ny44NDU1ODEsImV4cCI6MTcwNjQ2NTU1Ny44MzQ1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.movWb_hOeg6ZrQpm4HkR2Sii4v20J9KtLlgtSBbTH3Zeb7RdLPVf1p7pe5CWDD-K2D3Z9QcdtoSFpa5x4XIFGa8iEvwuCtIrhss-XMTppy33H5jBJ7qn_wRK2S6t-qCWG6KT2bPbZ34F94HV3IzPPfYvckc-K65WKTgcrsb6dhBnR8DG5YFjNzQL0BdncDx9RzMeLwmomvcvqSgZHKfvK3LMk1z95i2cY5vX9gUi-NlRA5FUn7HdSRITt34hXTXsSud90t2Ih_N8jWFYcRtHl2lJbn0KHyivwNwo--MMg4160zumFi7BIAFIFTiExoNjKDTmeU5FYWQZ97964X3O0LGaojhj4E_SqPbbQA1fmvahxybVcQX029C0SEkT2No25iIyyCEeEMx5cAb1-qz6-qmWjNahUflInmina6bGkte9k1ZZ4sYXWHVGg36HnLrDtoziCEVGMaxRUS7Fe6yNt-kJm9KKEIuMMrVLWEo4ORZlHEc5YDM307cpHTd64y8bwUAtzZC1zDqUxcNuGd7PASiPqMv9FYyzi98e9dZ906xBt1Mmt9MVyX8JCF_oPnLY5WXLFX2ME-zn3jRbQaiPoNd5i_mDJA3RpWFNpVg2aK4BIbqlJL9nYTMohwLL_XdvGOi3hp1txo55-D4fdAyTq_SVWPBT2t-bOCzR6Xg1jtw\"}"
+								},
+								{
+									"key": "Brear {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODU1NjM1Ny0wYmUxLTRlMzgtYmEwYS02YmZjYWRlNWJmNGMiLCJqdGkiOiI2YWJiYmVhYzc2MGJiYWQ4ODEyZTMyNzAwMDk2MTFmMjM3NGYwNWI3ZWM2MDY2MzhmY2FlMDc1NjhjZGJjY2MzNzI2YzQzYTBhNjMyNzFiYyIsImlhdCI6MTY3NDkyOTU1Ny44NDU1NzgsIm5iZiI6MTY3NDkyOTU1Ny44NDU1ODEsImV4cCI6MTcwNjQ2NTU1Ny44MzQ1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.movWb_hOeg6ZrQpm4HkR2Sii4v20J9KtLlgtSBbTH3Zeb7RdLPVf1p7pe5CWDD-K2D3Z9QcdtoSFpa5x4XIFGa8iEvwuCtIrhss-XMTppy33H5jBJ7qn_wRK2S6t-qCWG6KT2bPbZ34F94HV3IzPPfYvckc-K65WKTgcrsb6dhBnR8DG5YFjNzQL0BdncDx9RzMeLwmomvcvqSgZHKfvK3LMk1z95i2cY5vX9gUi-NlRA5FUn7HdSRITt34hXTXsSud90t2Ih_N8jWFYcRtHl2lJbn0KHyivwNwo--MMg4160zumFi7BIAFIFTiExoNjKDTmeU5FYWQZ97964X3O0LGaojhj4E_SqPbbQA1fmvahxybVcQX029C0SEkT2No25iIyyCEeEMx5cAb1-qz6-qmWjNahUflInmina6bGkte9k1ZZ4sYXWHVGg36HnLrDtoziCEVGMaxRUS7Fe6yNt-kJm9KKEIuMMrVLWEo4ORZlHEc5YDM307cpHTd64y8bwUAtzZC1zDqUxcNuGd7PASiPqMv9FYyzi98e9dZ906xBt1Mmt9MVyX8JCF_oPnLY5WXLFX2ME-zn3jRbQaiPoNd5i_mDJA3RpWFNpVg2aK4BIbqlJL9nYTMohwLL_XdvGOi3hp1txo55-D4fdAyTq_SVWPBT2t-bOCzR6Xg1jtw\"}",
+									"value": "Brear {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODU1NjM1Ny0wYmUxLTRlMzgtYmEwYS02YmZjYWRlNWJmNGMiLCJqdGkiOiI2YWJiYmVhYzc2MGJiYWQ4ODEyZTMyNzAwMDk2MTFmMjM3NGYwNWI3ZWM2MDY2MzhmY2FlMDc1NjhjZGJjY2MzNzI2YzQzYTBhNjMyNzFiYyIsImlhdCI6MTY3NDkyOTU1Ny44NDU1NzgsIm5iZiI6MTY3NDkyOTU1Ny44NDU1ODEsImV4cCI6MTcwNjQ2NTU1Ny44MzQ1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.movWb_hOeg6ZrQpm4HkR2Sii4v20J9KtLlgtSBbTH3Zeb7RdLPVf1p7pe5CWDD-K2D3Z9QcdtoSFpa5x4XIFGa8iEvwuCtIrhss-XMTppy33H5jBJ7qn_wRK2S6t-qCWG6KT2bPbZ34F94HV3IzPPfYvckc-K65WKTgcrsb6dhBnR8DG5YFjNzQL0BdncDx9RzMeLwmomvcvqSgZHKfvK3LMk1z95i2cY5vX9gUi-NlRA5FUn7HdSRITt34hXTXsSud90t2Ih_N8jWFYcRtHl2lJbn0KHyivwNwo--MMg4160zumFi7BIAFIFTiExoNjKDTmeU5FYWQZ97964X3O0LGaojhj4E_SqPbbQA1fmvahxybVcQX029C0SEkT2No25iIyyCEeEMx5cAb1-qz6-qmWjNahUflInmina6bGkte9k1ZZ4sYXWHVGg36HnLrDtoziCEVGMaxRUS7Fe6yNt-kJm9KKEIuMMrVLWEo4ORZlHEc5YDM307cpHTd64y8bwUAtzZC1zDqUxcNuGd7PASiPqMv9FYyzi98e9dZ906xBt1Mmt9MVyX8JCF_oPnLY5WXLFX2ME-zn3jRbQaiPoNd5i_mDJA3RpWFNpVg2aK4BIbqlJL9nYTMohwLL_XdvGOi3hp1txo55-D4fdAyTq_SVWPBT2t-bOCzR6Xg1jtw\"}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCustomerInfo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer/6?first_name=omar&last_name=ahmed&email=omar@gmail.com&user_name=omar2000&salary=48615&status=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"6"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "omar"
+								},
+								{
+									"key": "last_name",
+									"value": "ahmed"
+								},
+								{
+									"key": "email",
+									"value": "omar@gmail.com"
+								},
+								{
+									"key": "user_name",
+									"value": "omar2000"
+								},
+								{
+									"key": "salary",
+									"value": "48615"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCustomer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer/7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCustomer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer?first_name=ahmedssssss&last_name=faisalssss&email=msahmed355@gmail.comsssssss&user_name=faisal96ssssssss&salary=12351&status=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "ahmedssssss"
+								},
+								{
+									"key": "last_name",
+									"value": "faisalssss"
+								},
+								{
+									"key": "email",
+									"value": "msahmed355@gmail.comsssssss"
+								},
+								{
+									"key": "user_name",
+									"value": "faisal96ssssssss"
+								},
+								{
+									"key": "salary",
+									"value": "12351"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "User register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/Laravel/CompanyTask/public/api/register?name=Ahmed&email=ahmed355@gmail.com&password=123456789",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"Laravel",
+										"CompanyTask",
+										"public",
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Ahmed"
+										},
+										{
+											"key": "email",
+											"value": "ahmed355@gmail.com"
+										},
+										{
+											"key": "password",
+											"value": "123456789"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/Laravel/CompanyTask/public/api/login?email=ahmed355@gmail.com&password=123456789",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"Laravel",
+										"CompanyTask",
+										"public",
+										"api",
+										"login"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Ahmed",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "ahmed355@gmail.com"
+										},
+										{
+											"key": "password",
+											"value": "123456789"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get All Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Laravel/CompanyTask/public/api/project",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Laravel",
+								"CompanyTask",
+								"public",
+								"api",
+								"project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Laravel/CompanyTask/public/api/project/1?Accept=application/json&Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODVkOGZiNS05ZWRlLTQyODktYWYxMS05NmJjZjdlOWMxOTMiLCJqdGkiOiJkODE3YWU4MTU3ODU2YmYyYTQzOTk5ZmRhMWI4MGQzNGExNjYzZDU1NmQxMTZmYTU3YjZiODg0ZGQxMzkyNzFjZTJkMzBlMTBmMTU2Yjc1ZCIsImlhdCI6MTY3NTI3NzA0MS40MDc0MDYsIm5iZiI6MTY3NTI3NzA0MS40MDc0MDgsImV4cCI6MTcwNjgxMzA0MS40MDE3MDQsInN1YiI6IjciLCJzY29wZXMiOltdfQ.jsw7Os3wExeYwOEw465n4D5EgmftyifZITzz1Sn9ikMCsD9Y03iQLj4TcMqFogJNCMbClwBpB0A2shzMER2xP5dwAyDpGrMD-4eA6ghltTQFShxrO-PiBivMQDuPFJ7-xKsHKXfF8UYHnwZ3t4xBPFbG-YQa9aijFrprzfybX7zMMabUwGn5e245gvxvL5mdULf5o1F8RHL2I_wH5tfT86qIvQ6uTb2z3G2BVY9VATE7oHJAucIx_nJovWeyKcxqH1C-PGZhTtEs0JMLOtd7WUUsH8-N1hsaeJNWZlBPpp8G2B-YyrpF2db57dKr98OthZ3797OUmhVESKVq7Y4NHyXCiIXI24o1_qMzryE1uN2X1LKWc_pO3N8Erwuagw_uDyY34YXjALucuxCU6PAvhDInKq5kzVwHEcZ_EjU7sqAmfWXYI77SHWSIMj6ARaME5PW7zOs_b3WM1F2vZzCOwqhTDWJsRv1QCzg7Sp43pFjJhY2SZ8K11AJJoRQLSbQMETAHjyiGFB7jVWlfVdBqsX5spJdY-DAf3pdgklwSz68JVcZt4t4FmQCTwOvZ-n13maiXDEjD_RmpJDU6Z4CeR5lNzikbjCGeigFmJMTRxghF9bmtiHhWfLedARpAvTBfCvQyUJ0mtXgmRMeW7RwE4Uu2jADmovl2uY0rD_BUkUQ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Laravel",
+								"CompanyTask",
+								"public",
+								"api",
+								"project",
+								"1"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "application/json"
+								},
+								{
+									"key": "Authorization",
+									"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODVkOGZiNS05ZWRlLTQyODktYWYxMS05NmJjZjdlOWMxOTMiLCJqdGkiOiJkODE3YWU4MTU3ODU2YmYyYTQzOTk5ZmRhMWI4MGQzNGExNjYzZDU1NmQxMTZmYTU3YjZiODg0ZGQxMzkyNzFjZTJkMzBlMTBmMTU2Yjc1ZCIsImlhdCI6MTY3NTI3NzA0MS40MDc0MDYsIm5iZiI6MTY3NTI3NzA0MS40MDc0MDgsImV4cCI6MTcwNjgxMzA0MS40MDE3MDQsInN1YiI6IjciLCJzY29wZXMiOltdfQ.jsw7Os3wExeYwOEw465n4D5EgmftyifZITzz1Sn9ikMCsD9Y03iQLj4TcMqFogJNCMbClwBpB0A2shzMER2xP5dwAyDpGrMD-4eA6ghltTQFShxrO-PiBivMQDuPFJ7-xKsHKXfF8UYHnwZ3t4xBPFbG-YQa9aijFrprzfybX7zMMabUwGn5e245gvxvL5mdULf5o1F8RHL2I_wH5tfT86qIvQ6uTb2z3G2BVY9VATE7oHJAucIx_nJovWeyKcxqH1C-PGZhTtEs0JMLOtd7WUUsH8-N1hsaeJNWZlBPpp8G2B-YyrpF2db57dKr98OthZ3797OUmhVESKVq7Y4NHyXCiIXI24o1_qMzryE1uN2X1LKWc_pO3N8Erwuagw_uDyY34YXjALucuxCU6PAvhDInKq5kzVwHEcZ_EjU7sqAmfWXYI77SHWSIMj6ARaME5PW7zOs_b3WM1F2vZzCOwqhTDWJsRv1QCzg7Sp43pFjJhY2SZ8K11AJJoRQLSbQMETAHjyiGFB7jVWlfVdBqsX5spJdY-DAf3pdgklwSz68JVcZt4t4FmQCTwOvZ-n13maiXDEjD_RmpJDU6Z4CeR5lNzikbjCGeigFmJMTRxghF9bmtiHhWfLedARpAvTBfCvQyUJ0mtXgmRMeW7RwE4Uu2jADmovl2uY0rD_BUkUQ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Laravel/CompanyTask/public/api/project?name=one P&description=Hello From Api First P",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Laravel",
+								"CompanyTask",
+								"public",
+								"api",
+								"project"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "one P"
+								},
+								{
+									"key": "description",
+									"value": "Hello From Api First P"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Laravel/CompanyTask/public/api/project/2?name=Two&description=Updeted From APi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Laravel",
+								"CompanyTask",
+								"public",
+								"api",
+								"project",
+								"2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Two"
+								},
+								{
+									"key": "description",
+									"value": "Updeted From APi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Laravel/CompanyTask/public/api/project/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Laravel",
+								"CompanyTask",
+								"public",
+								"api",
+								"project",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emp",
+			"item": [
+				{
+					"name": "Get All Emp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add emp",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee/5?first_name=salem1&last_name=eslam1&email=salem.com1&phone=0154158552&company_id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee",
+								"5"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "salem1"
+								},
+								{
+									"key": "last_name",
+									"value": "eslam1"
+								},
+								{
+									"key": "email",
+									"value": "salem.com1"
+								},
+								{
+									"key": "phone",
+									"value": "0154158552"
+								},
+								{
+									"key": "company_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Add Company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Company?name=c3&email=c3@gmail&website=c3.com",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Company"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "c3"
+								},
+								{
+									"key": "email",
+									"value": "c3@gmail"
+								},
+								{
+									"key": "website",
+									"value": "c3.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register?user_name=momo555&email=momo@gmail&password=123456789&phone=01254852",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							],
+							"query": [
+								{
+									"key": "user_name",
+									"value": "momo555"
+								},
+								{
+									"key": "email",
+									"value": "momo@gmail"
+								},
+								{
+									"key": "password",
+									"value": "123456789"
+								},
+								{
+									"key": "phone",
+									"value": "01254852"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "passport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/register?name=mostafa&email=msahmed355@gmail.com&password=a123456789",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "mostafa"
+						},
+						{
+							"key": "email",
+							"value": "msahmed355@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "a123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost/Laravel/PelcroAssesment/public/api",
+			"type": "default"
+		}
+	]
+}
